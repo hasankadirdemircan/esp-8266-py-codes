@@ -9,8 +9,8 @@ graph TD;
     C --> D[Initialize LED on GPIO4];
     D --> E[Create Web Server];
     E -->|Listen for Requests| F[Accept Connection];
-    F -->|GET /on| G[Turn LED On];
-    F -->|GET /off| H[Turn LED Off];
+    F -->|"GET IP:80/on"| G[Turn LED On];
+    F -->|"GET IP:80/off"| H[Turn LED Off];
     F -->|Other Requests| I[Return Default Message];
     G --> J[Send Response: LED Open];
     H --> K[Send Response: LED Close];
@@ -33,7 +33,8 @@ graph TD;
     style K fill:#17a2b8,stroke:#ffffff,stroke-width:2px,color:#ffffff,font-weight:bold;
     style L fill:#17a2b8,stroke:#ffffff,stroke-width:2px,color:#ffffff,font-weight:bold;
     style M fill:#28a745,stroke:#ffffff,stroke-width:2px,color:#ffffff,font-weight:bold;
+
 ```
 
-Now your ESP8266 is ready to run MicroPython! 🚀
+Now your ESP8266 is ready to run MicroPython with a local web server for LED control! 🚀
 
