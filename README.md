@@ -58,25 +58,18 @@ If the installation was successful, you should see a Python REPL prompt (`>>>`).
 
 ```mermaid
 graph TD;
-    classDef title fill:#ffcc00,stroke:#333,stroke-width:2px,font-size:18px,font-weight:bold;
-    classDef step fill:#66ccff,stroke:#333,stroke-width:2px,font-size:14px;
-    classDef final fill:#66ff99,stroke:#333,stroke-width:2px,font-size:14px;
-    
-    A[Install esptool]:::step -->|pip install| B[Erase Flash Memory]:::step;
-    B -->|Run erase_flash| C[Download Firmware]:::step;
-    C -->|Save to Downloads| D[Flash Firmware]:::step;
-    D -->|Run write_flash| E[Verify Installation]:::step;
-    E -->|Connect via Serial| F[MicroPython Ready!]:::final;
-    
-    subgraph MicroPython Installation
-    A
-    B
-    C
-    D
-    E
-    F
-    end
-    class MicroPython Installation title;
+    A[Install esptool] -->|pip install| B[Erase Flash Memory];
+    B -->|Run erase_flash| C[Download Firmware];
+    C -->|Save to Downloads| D[Flash Firmware];
+    D -->|Run write_flash| E[Verify Installation];
+    E -->|Connect via Serial| F[MicroPython Ready!];
+
+    style A fill:#66ccff,stroke:#333,stroke-width:2px;
+    style B fill:#66ccff,stroke:#333,stroke-width:2px;
+    style C fill:#66ccff,stroke:#333,stroke-width:2px;
+    style D fill:#66ccff,stroke:#333,stroke-width:2px;
+    style E fill:#66ccff,stroke:#333,stroke-width:2px;
+    style F fill:#66ff99,stroke:#333,stroke-width:2px,font-weight:bold;
 ```
 
 Now your ESP8266 is ready to run MicroPython! 🚀
