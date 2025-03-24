@@ -64,12 +64,12 @@ graph TD;
     D -->|Run write_flash| E[Verify Installation];
     E -->|Connect via Serial| F[MicroPython Ready!];
 
-    style A fill:#66ccff,stroke:#333,stroke-width:2px;
-    style B fill:#66ccff,stroke:#333,stroke-width:2px;
-    style C fill:#66ccff,stroke:#333,stroke-width:2px;
-    style D fill:#66ccff,stroke:#333,stroke-width:2px;
-    style E fill:#66ccff,stroke:#333,stroke-width:2px;
-    style F fill:#66ff99,stroke:#333,stroke-width:2px,font-weight:bold;
+    style A fill:#0d6efd,stroke:#ffffff,stroke-width:2px,color:#ffffff,font-weight:bold;
+    style B fill:#6610f2,stroke:#ffffff,stroke-width:2px,color:#ffffff,font-weight:bold;
+    style C fill:#198754,stroke:#ffffff,stroke-width:2px,color:#ffffff,font-weight:bold;
+    style D fill:#fd7e14,stroke:#ffffff,stroke-width:2px,color:#ffffff,font-weight:bold;
+    style E fill:#dc3545,stroke:#ffffff,stroke-width:2px,color:#ffffff,font-weight:bold;
+    style F fill:#20c997,stroke:#ffffff,stroke-width:2px,color:#ffffff,font-weight:bold;
 ```
 
 Now your ESP8266 is ready to run MicroPython! 🚀
