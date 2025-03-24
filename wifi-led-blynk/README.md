@@ -23,8 +23,8 @@ graph TD;
     %% Blynk Integration %%
     C --> N[Connect to Blynk Server];
     N --> O[Initialize Blynk];
-    O --> P[Define Virtual Pin Handlers];
-    P -->|Blynk Server Sends Request| Q[Check Virtual Pin Value];
+    O --> P[Define Virtual Pin Handlers V0];
+    P -->|Blynk Server Sends Request| Q[Check Virtual Pin Value --> V0 Value];
     Q -->|If 1| R[Turn LED On];
     Q -->|If 0| S[Turn LED Off];
     R --> T[Send LED Status to Blynk];
